@@ -1,0 +1,329 @@
+body{
+    padding: 0%;
+}
+html::-webkit-scrollbar{
+    width: 15px;
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(39, 39, 39);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: rgba(90, 90, 90, 0.562);
+}
+
+.banner{
+    background-image: url(../Images/banner-bg.jpg);
+    background-size: cover ;
+    background-position: center center;
+    height: 750px;
+}
+nav li:hover{
+    color: rgb(255, 86, 64) !important;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+nav li{
+    line-height: 13px;
+    border-top: 1px solid transparent;
+}
+nav li:active{
+    background-color: rgba(5, 4, 4, 0.781);
+    border-top: 1px solid red;
+}
+nav li:focus{
+    background-color: rgba(5, 4, 4, 0.781);
+}
+nav li a{
+    color: white !important;
+    transition: 0.3s !important;
+    letter-spacing: 1px;
+}
+nav li a:hover{
+    color: rgb(255, 86, 64) !important;
+}
+.active{
+    background-color: rgba(5, 4, 4, 0.781);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: 1px solid red;
+}
+.active a{
+    color: rgb(255, 86, 64) !important;
+}
+.interior-text{
+    color: rgb(255, 86, 64) ;
+}
+#section1 button:hover{
+    background-color: red !important;
+    color: white !important;
+    transition: 0.5s;
+    
+}
+
+/* -----Section 2----- */
+.section-2{
+    position: relative;
+    margin-top: -120px;
+    background-color: rgb(18, 20, 20);
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 15px;
+}
+.section-2 input{
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 5px;
+    padding: 7px 15px;
+    background-color: rgba(100, 100, 100, 0.76);
+    outline: none;
+    color: white;
+}
+.section-2 input::placeholder{
+    color: rgba(214, 214, 214, 0.781);
+}
+.section-2 label{
+    padding-bottom: 5px;
+}
+.section-2 select{
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 5px;
+    padding: 7px 15px;
+    background-color: transparent;
+    outline: none;
+    color: rgba(255, 255, 255, 0.829);
+}
+option{
+    background-color: rgb(17, 17, 17);
+    padding: 0 3px;
+}
+
+.section-2 button{
+    background-color: red;
+}
+
+/* -----Section 3----- */
+.section-3{
+    background-color: rgb(18, 20, 20) ;
+    padding: 200px 105px 50px 105px;
+    margin-top: -123px;
+    color: gray;
+}
+.red-line{
+    display: block;
+    border: 1px solid rgb(216, 3, 3);
+    width: 64px;
+    height: 1px;
+
+}
+.text-red{
+    color: rgb(253, 51, 51);
+}
+.sec-3_col-2 img{
+    width: 94%;
+    border-radius: 10px;
+}
+.s3_c2-hover1:hover{
+    transition: 0.5s ease-in-out !important;
+    cursor: pointer;
+    color: rgb(255, 53, 53) !important;
+}
+
+/* ----Section 4---- */
+.section-4{
+    background-color: rgb(18, 20, 20);
+}
+.sec-4_col-2{
+    position: relative;
+}
+.sec-4-img1-span{
+    transition: 2s !important;
+}
+.sec-4-img1-span::before{
+    position: absolute;
+    content: "Modrenize interior";
+    font-size: 30px;
+    font-weight: 700px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.829);
+    border-radius: 12px;
+    opacity: 0;
+}
+.sec-4-img1-span:hover::before{
+animation: animate 1s ;
+animation-fill-mode: forwards;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.sec-4_col-3{
+    overflow: hidden;
+}
+.sec-4-img1{
+    width: 108%;
+    border-radius: 12px;
+}
+.section-4 button{
+    background-color: rgb(209, 0, 0);
+    color: white;
+    border-radius: 6px;
+    width: 200px;
+}
+.section-4 button:hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+
+/* -----Section 5--- */
+
+.section-5{
+    background-image: url(../Images/contact-us-bg.jpg);
+    padding: 30px 150px;
+}
+.section-5 input{
+    width: 230px;
+    margin: 10px 7px;
+    padding: 7px 10px;
+    background-color: rgba(107, 107, 107, 0.733);
+    outline: none;
+    border: 1px solid rgba(104, 103, 103, 0.747);
+    border-radius: 7px;
+    color: white !important;
+}
+.section-5 input::placeholder{
+    color: rgb(196, 196, 196);
+}
+.section-5 input:focus{
+    outline: 2px solid white;
+}
+
+textarea{
+    margin: 0 8px;
+    padding: 7px 10px;
+    height: 100px;
+    width: 480px ;
+    border-radius: 10px;
+    background: transparent;
+    color: white !important;
+}
+.section-5 textarea::placeholder{
+    color: rgb(196, 196, 196);
+}
+.section-5 button{
+    width: 96%;
+    margin: 10px 8px;
+    background-color: rgb(218, 0, 0);
+    color: white;
+}
+.section-5 img{
+    width: 100%;
+}
+footer{
+    background-color: rgb(20, 20, 20);
+}
+footer p{
+    color: rgba(119, 119, 119, 0.877);
+
+}
+footer .right-col{
+    line-height: 42px;
+}
+footer input{
+    outline: none;
+    border: 1px solid rgba(53, 53, 53, 0.747);
+    border-right: none ;
+    
+
+}
+footer a{
+    color: gray ;
+    text-decoration: none;
+    transition: 0.7s;
+}
+footer a:hover{
+    color: rgba(255, 61, 61, 0.925);
+}
+footer button{
+    outline: none;
+    border: 1px solid rgba(53, 53, 53, 0.747);
+    border-left: none ;
+    margin: 0 0 0 -5px;
+}
+.fa-twitter-square{
+    margin-left: -20px;
+}
+
+@media (max-width: 1201px){
+    .section-4 h2,.section-5 h1{
+        font-size: 22px;
+    }   
+    .section-5 input{
+        width: 97%;
+    }
+    textarea{
+        width: 97% ;
+    }
+    .section-5 button{
+        width: 98%;
+    }
+    .section-5{
+        padding: 30px 50px;
+    }
+}
+@media (max-width: 991px) {
+    #section1 h1,#section1 h4{
+        font-size: 20px ;
+    }
+    nav li{
+        border-top: none !important ;
+    }
+    nav li:hover{
+        border-radius: 0px;
+    }
+    .active{
+        border-radius: 0px;
+    }
+    #section1 ul{
+        background-color: rgb(36, 36, 36);
+    }
+    .section-3{
+        margin-top: -351px;
+        padding: 335px 20px 50px 30px;
+    }
+    .section-3 h2{
+        font-size: 20px;
+    }
+    .section-4 h2{
+        font-size: 17px;
+    }
+    .sec-4-img1-span {
+        display: block;
+        width: 60%;
+    }
+    .sec-4-img1-span::before{
+        width: 62.5%;
+        font-size: 20px;
+    }
+    
+    .sec-4_col-2 {
+    display: flex;
+    justify-content: center;
+    }
+    .sec-4_col-3 {
+        padding-top: 7px;
+        display: flex;
+        justify-content: center;
+    }
+    .section-5 h1{
+        font-size: 17px;
+    }
+
+}
